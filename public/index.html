@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App Firebase</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js"></script>
+  <script src= "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js"></script>
+<script src="./main.js"></script>
+
+    <script defer src="app.js"></script>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+
+<script>
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAj69_LQqP-YjsNtidge3WW2cGhm6MrPJw",
+    authDomain: "quiz-app-9cdf8.firebaseapp.com",
+    projectId: "quiz-app-9cdf8",
+    storageBucket: "quiz-app-9cdf8.appspot.com",
+    messagingSenderId: "942300522341",
+    appId: "1:942300522341:web:e03330b5b88042d10ea38c",
+    measurementId: "G-0BQSCKJT92"
+  };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+</head>
+<body>
+    <div id="mainDiv">
+        <button class="btn btn-success startBtn" id="startBtn" onclick="startQuiz()">Start Quiz</button>
+        <div id="mainBody" style="display: none;">
+        <button class="btn btn-danger exitBtn" id="exitBtn" onclick="appendResult()">Finish Quiz</button>
+        <div id="quiz">
+            <div id="quizHeader"></div>
+            <div id="quizBody"></div>
+        </div>
+    </div>
+</body>
+</html>
